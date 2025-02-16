@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    alert("Hello! Connections");
+    alert("Hello! Connections")
   }, []);
 
   const person = {
