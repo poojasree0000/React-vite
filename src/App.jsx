@@ -1,41 +1,17 @@
-import { useEffect } from "react";
-import "./App.css";
 
-function App() {
-  useEffect(() => {
-    alert("Hello! Connections")
-  }, []);
 
-  const person = {
-    fullName: "Pooja S",
-    years: 18,
-  };
+import React from 'react'
+import './App.css'
+import Comp1 from './Comp1'
 
-  console.log("Years: " + person.years);
 
-  function greetMorning() {
-    console.log("Hello Pooja, Good Morning!");
-  }
-
-  const greetAfternoon = () => {
-    console.log("Hello Pooja, Good Afternoon!");
-  };
-
+const App = () => {
   return (
-    <>
-      <div className="info">
-        <h1>Full Name: {person.fullName}</h1>
-        <h1>Years: {person.years}</h1>
-      </div>
-      <div>
-        <button onClick={greetMorning}>Click for Morning Greeting</button>
-        <button onClick={greetAfternoon}>Click for Afternoon Greeting</button>
-        <button onClick={() => console.log("Hello Pooja, Good Night!")}>
-          Click for Night Greeting
-        </button>
-      </div>
-    </>
-  );
+    <div>
+      <p className ='text'>App</p>
+      <Comp1 name="Sai" year="3" />
+    </div>
+  )
 }
 
-export default App;
+export default App
